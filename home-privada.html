@@ -14,6 +14,132 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <div class="row text-center">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Inglés</a></li>
+                    <li class="breadcrumb-item"><a href="#">Euskera</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Español</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><img src="logo.png" width="80"
+                                class="img-fluid" alt="Logo"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #95824D" aria-current="page"
+                            href="#"><strong>MENÚ</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #95824D" href="#">Configuración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #95824D" href="#">Preferencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Desconectarse</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-8">
+                <h1>Últimas visitas</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Número</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">DNI</th>
+                            <th scope="col">Fecha de acceso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>73567839I</td>
+                            <td>03.02.23</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>87568392T</td>
+                            <td>05.02.23</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larryd</td>
+                            <td>87568777T</td>
+                            <td>07.02.23</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="container-fluid">
+                    <button type="button" class="btn btn-outline-secondary">Eliminar historial</button>
+                    <button type="button" class="btn btn-outline-secondary">Añadir nuevas entradas</button>
+                    <button type="button" class="btn btn-outline-secondary">Modificar usuarios</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        style="background-color: #95824D">
+                        Contactar con el administrador
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contactando...</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Se hará llegar tu petición al administrador
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-fluid">
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                </div>
+                <hr>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-title="Información..."
+                    data-bs-content="Acercate a las oficinas para conocer más">Más información</button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-title="Twittear">
+                    Redes sociales
+                </button>
+
+            </div>
+
+        </div>
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
+        <script>
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+        </script>
 </body>
 
 </html>
